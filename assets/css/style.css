@@ -1,0 +1,29 @@
+/*Estilos da pagina index.html*/
+
+
+.center {
+ align-items: center;
+  
+}
+
+img {
+  display:flex;
+  float: left;
+  padding: 20px;
+  width: 40%;
+  height: 40%
+  
+}
+
+
+.tam-social{
+  width:50px ;
+  right: 50px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.margin{
+  
+  margin-left: 50px;
+}

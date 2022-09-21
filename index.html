@@ -2,22 +2,26 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Link para pegar o estilo css dos servidores do bootstrap -->
-
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <style>
+        .tm-social {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+
+    <title>Sou Turista</title>
 </head>
 
 <body>
-
-    <!--Menu-->
-
+    <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-warning ">
         <a class="navbar-brand text-white" href="#">TuristeiRecife</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
@@ -28,101 +32,345 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(página
-                            atual)</span></a>
+                    <a class="nav-link text-white" href="sobrecidade.html">Sobre a cidade</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarcidade" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sobre
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#"></a>
+                        Parques</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarcidade">
+                        <a class="dropdown-item" href="http://parquedajaqueira.recife.pe.gov.br/">Parque da Jaqueira</a>
+                        <a class="dropdown-item"
+                            href="https://visit.recife.br/o-que-fazer/atracoes/parques-e-pracas/parque-santana">Parque
+                            Santana</a>
+                        <a class="dropdown-item"
+                            href="https://visit.recife.br/o-que-fazer/atracoes/parques-e-pracas/parque-caiara">Parque do
+                            Caiara</a>
+                        <a class="dropdown-item"
+                            href="https://visit.recife.br/en/o-que-fazer/atracoes/parques-e-pracas/parque-urbano-da-macaxeira">Parque
+                            da Macaxeira</a>
+                        <a class="dropdown-item"
+                            href="https://visit.recife.br/en/o-que-fazer/atracoes/parques-e-pracas/parque-estadual-e-zoologico-de-dois-irmaos">Parques
+                            Dois Irmãos</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarcidade" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Shoppings</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarcidade">
+                        <a class="dropdown-item" href="https://www.shoppingrecife.com.br/">Shopping Recife</a>
+                        <a class="dropdown-item"
+                            href="https://vivariomarrecife.com.br/?utm_source=Google%20Meu%20Neg%C3%B3cio&utm_medium=Site">
+                            Shopping RioMar</a>
+                        <a class="dropdown-item" href="https://www.shoppingboavista.com.br/">Shopping Boa Vista</a>
+                        <a class="dropdown-item" href="https://www.plazacasaforte.com.br/">Shopping Plaza</a>
+                        <a class="dropdown-item" href="https://www.shoppingtacaruna.com.br/">Shopping Tacaruna</a>
 
                     </div>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Sobre" aria-label="Pesquisar">
-                <button class="btn btn-success my-2 my-sm-2" type="submit">Pesquisar</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-info my-4 my-sm-4" type="submit">Pesquisar</button>
             </form>
         </div>
     </nav>
-    <!--/Menu-->
+    <!--/NavBar-->
 
-    <!--Grid-->
 
-    <div class="container ">
-        <div class="row mt-5 d-flex justify-content-center ">
-            <!-- quero utilizar a propriedade justify-content-center do display-flex (flex-box) para centralizar minhas colunas -->
-            <!-- 3 grupos de 4 colunas = somando o limite maximo de 12 colunas -->
-            <div class="col-md-4 p-0 ">
-                <div class="bg-warning">4 colunas </div>
+    <!--Carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+       
+        <div class="carousel-inner " style="height: 620px; width: auto;">
+            <div class="carousel-item active">
+                <img class="d-block w-100"
+                    src="https://i.imgur.com/5j8bwQu.png"
+                    alt="Primeiro Slide">
             </div>
-
-            <div class="col-md-4 p-0">
-                <div class="bg-danger">4 colunas </div>
-            </div>
-
-            <div class="col-md-4 p-0">
-                <div class="bg-warning">4 colunas </div>
-            </div>
-        </div>
+            
+    </div>
+    <!--/Carousel-->
 
 
-        <div class="row mt-5 d-flex justify-content-center ">
-            <!-- 2 grupos de 6 colunas= somando o limite maximo de 12 colunas -->
-
-            <div class="col-md-6 p-0 ">
-                <div class="bg-warning"> 6 colunas </div>
-            </div>
-
-            <div class="col-md-6 p-0">
-                <div class="bg-danger">6 colunas </div>
-            </div>
-
-        </div>
-
-        <div class="row mt-5 d-flex justify-content-center ">
-            <!-- 1 grupo de 8 colunas e outro grupo com 4 colunas= somando o limite de 10 colunas (não é orbigatoria usar criar as 12 colunas) -->
-
-            <div class="col-md-8 p-0 ">
-                <div class="bg-warning"> 8 coluna </div>
-            </div>
-
-            <div class="col-md-4 p-0">
-                <div class="bg-danger"> 4 coluna </div>
-            </div>
-        </div>
-        <div class="row mt-5 d-flex justify-content-center ">
-            <!-- 1 grupo de 8 colunas e outro grupo com 4 colunas= somando o limite de 10 colunas (não é orbigatoria usar criar as 12 colunas) -->
-
-            <div class="col-md-6 p-0 ">
-                <div class="bg-warning"> 6 coluna </div>
-            </div>
-
-            <div class="col-md-5 p-0">
-                <div class="bg-danger"> 5 coluna </div>
-            </div>
+    <!--Jumbotron-->
+    <div class="jumbotron">
+        <div class="container justify-content-center">
+            <h1 class="display-3 text-center">Bem vindo!</h1>
+            <p class="lead text-center"> Conheça alguns dos pontos turisticos mais bonitos da cidade!! </p>
         </div>
     </div>
+    <!--/Jumbotron-->
 
-    <!--/Grid-->
 
-    <!--Scripts necessarios para utilização dos codigos Js do BootStrap -->
+    <!--Cardsgroup-->
+    <div class="container-fluid">
+
+        <div class="card-columns text-center ">
+            <div class="card">
+                <img class="card-img-top " src="https://i.imgur.com/TV2ODiH.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Praça do Marco Zero</h5>
+                    <p> A praça tem o nome original de Praça Barão do Rio Branco, todavia ficou conhecida como Praça do Marco Zero pelo fato de que nela encontra-se o quilometro zero das estradas de Pernambuco. </p>
+                    <p class="card-text justify-content-center">LOCALIZAÇÃO:
+                        AV. ALFREDO LISBOA, S/N - RECIFE, PE, 50030-150 </p>
+                </div>
+            </div>
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-2">
+                    
+                    
+                </blockquote>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/qUVON93.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Paço do Frevo</h5>
+                    <p> um local que propõe a perpetuação do ritmo do Frevo através de gerações por meio do incentivo à pesquisa, exposições e ensino da dança e música. Um espaço que congrega a história da mais ilustre manifestação cultural do pernambucano por meio de sua história e o conto de suas memórias.</p>
+                    <p class="card-text justify-content-center">LOCALIZAÇÃO:
+                        LOCALIZAÇÃO: PRAÇA DO ARSENAL DA MARINHA, S/N, BAIRRO DO RECIFE</p>
+                </div>
+            </div>
+
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                    
+                    
+                </blockquote>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top " src="https://i.imgur.com/EVo55hf.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Centro de Artesanato de Pernambuco</h5>
+                    <p class="card-text justify-content-center">Instalado no Armazém 11 do porto do Recife, ao lado do Marco Zero, ocupa uma área construída de 2.511 m². O espaço conta com cerca de 16 mil peças de 500 artesãos de todas as regiões de Pernambuco para comercialização, </p>
+                    <p class="card-text justify-content-center">LOCALIZAÇÃO:
+                        PRAÇA DO MARCO ZERO, ARMAZÉM 11, BAIRRO DO RECIFE</p>
+                </div>
+            </div>
+
+           
+
+            <div class="card">
+                <img class="card-img-top " src="https://i.imgur.com/iDrwl5J.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Parque das Esculturas</h5>
+                    <p class="card-text justify-content-center">O Parque de Esculturas é composto por obras do artista plástico Francisco Brennand, e foi inaugurado como comemoração dos 500 anos de descobrimento do Brasil. Foi instalado sobre o molhe do porto. Tartarugas, pelicanos, ovos, maçarico, pássaros roca e sentinela guardam a principal obra do parque, a torre de cristal, inspirada em uma flor descoberta pelo paisagista Roberto Burle Marx. </p>
+                    <p class="card-text justify-content-center">LOCALIZAÇÃO:
+                        ARRECIFES DO PORTO, S/N, BAIRRO DO RECIFE</p>
+                </div>
+            </div>
+
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-2">
+                    
+                    
+                </blockquote>
+            </div>
+            
+            <div class="card">
+                <img class="card-img-top " src="https://i.imgur.com/Lvk2iA0.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Rua do Bom Jesus</h5>
+                    <p class="card-text justify-content-center">No período da ocupação holandesa, vários judeus vieram se estabelecer no Recife, precisamente na Rua do Bom Jesus. Por este fato a rua ficou conhecida como “Rua dos Judeus”, em referência à liberdade de credo. A rua é considerada a mais antiga do Recife e é assim chamada por causa do arco de Bom Jesus que existia como porta de entrada da cidade.</p>
+                    <p class="card-text justify-content-center">LOCALIZAÇÃO:
+                        RUA DO BOM JESUS</p>
+                </div>
+            </div>
+
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                    
+                    
+                </blockquote>
+            </div>
+
+           
+
+            <div class="card">
+                <img class="card-img-top " src="https://i.imgur.com/r2CXA25.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Oficina Francisco Brennand</h5>
+                    <p> Local de indescritível beleza que integra a paisagem do antigo Engenho São João e os Jardins com traços de Burle Max ao valioso acervo de Francisco Brennand, importante artista brasileiro.</p>
+                    <p class="card-text justify-content-center">LOCALIZAÇÃO:
+                        PROPRIEDADE SANTOS COSME E DAMIÃO, S/N, VÁRZEA</p>
+                </div>
+            </div>
+
+           
+
+
+            <div class="card">
+                <img class="card-img" src="https://i.imgur.com/Na70qoQ.jpg" alt="Imagem do card">
+                <div class="card-body">
+                    <h5 class="card-title">Capela Dourada</h5>
+                    <p class="card-text justify-content-center">A Capela Dourada, consagrada como um dos monumentos barrocos mais importantes do Brasil, possui cobertura de finas camadas de ouro de cima a baixo. Sua construção foi iniciada no fim do século XVII e finalizada em 1724. </p>
+                    <p class="card-text justify-content-center">LOCALIZAÇÃO:
+                        RUA DO IMPERADOR DOM PEDRO II, S/N, SANTO ANTÔNIO</p>
+                </div>
+            </div>
+
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-2">
+                    
+                    
+                </blockquote>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img" src="https://i.imgur.com/2WAwORg.jpg" alt="Imagem do card">
+                <div class="card-body">
+                    <h5 class="card-title">Instituto Ricardo Brennand</h5>
+                    <p class="card-text justify-content-center">Inserido em ampla área verde, abriga imponente réplica de castelo medieval, além de pinacoteca e biblioteca. Mantém acervo de livros raros, obras de arte das mais diversas procedências e épocas, além de uma coleção de armas brancas. O Instituto foi fundado em 2002, pelo empresário e colecionador Ricardo Brennand.</p>
+                    <p class="card-text justify-content-center">LOCALIZAÇÃO:
+                        ALAMEDA ANTÔNIO BRENNAND, S/N VÁRZEA</p>
+                </div>
+            </div>
+
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                    
+                    
+                </blockquote>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top " src="https://i.imgur.com/AluuN8Y.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Museu Cais do Sertão</h5>
+                    <p> Construído no local de antigos armazéns do Porto do Recife, o Cais do Sertão oferece aos visitantes exposições temporárias e acervo permanente, com referências à cultura sertaneja da região Nordeste, com experiências sensoriais e arquitetura inovadora, em edificação que exprime em seus traços a união do litoral com o sertão.</p>
+                    <p class="card-text justify-content-center">LOCALIZAÇÃO:
+                        AV ALFREDO LISBOA, 11, BAIRRO DO RECIFE</p>
+                </div>
+            </div>
+    
+
+            
+           
+        </div>
+
+        <!--/Cardsgroup-->
+
+        <div class="container justify-content-center mt-5">
+
+            <!--TextoeVideo-->
+        <div class="row mt-5 ">
+            <div class="col-md-6" style="background-color: #FFAF10;">
+                <h3 class="text-center text-white mt-3"> Recife, Capital da Criatividade</h3>
+                <p class="text-justify mt-4">
+
+                    "A gente cria, inova, inspira, faz, refaz, faz de novo. A gente faz o novo. Entre rios, pontes e
+                    overdrives, a gente navega entre casarões antigos e um mar de tecnologia. Tudo bem envenenado, bom
+                    pra mim e bom pra tu, feito cantava Chico, conterrâneo de Naná, João Cabral de Melo Neto, Carlos
+                    Pena Filho, Brennand. Nossa arte está até no sotaque, que é tão bonito que dizem que a gente fala
+                    cantando. Quando o assunto é inovação, cor, ritmo, som, sabor e expressão, Recife é reinvenção. Todo
+                    dia".
+                </p>
+
+            </div>
+
+            <div class="col-md-6 ">
+                <iframe width="530" height="312" src="https://www.youtube.com/embed/CWk5OSafgYA"
+                    title="O Recife é pra Sentir!" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <!--/TextoeVideo-->
+
+
+
+        <div class="card text-black bg-warning  mt-5 mb-3 mr-3">
+            <div>
+                <p>Quer perguntar alguma coisa, mandar sugestões ou
+                    só dar um oi? Envie um
+                    e-mail para turisteirecife@gmail.com ou
+                    preencha o formulário abaixo.
+                </p>
+            </div>
+        </div>
+
+        <!--Formulario de contato-->
+    </div>
+
+    <div class="container button">
+        <form>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder=" Digite seu nome" onkeyup="validaNome()">
+                    <div id="textNome"></div>
+                </div>  
+                <br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="digite seu e-mail" onkeyup="validaEmail()">
+                    <div id="textEmail"></div>
+                </div>
+                <br>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="00000000000" onkeyup="validaTelefone()">
+                    <div id="textTelefone"></div>
+                </div>
+                <br>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" rows="3" placeholder="Mensagem máxima de 200 caracteres"  onkeyup="validaMensagem()"></textarea>
+                    <div id="textMensagem"></div>
+                </div>
+                <br>
+
+                <div class="mt-3">
+                    <button onclick="enviar()">Enviar</button>
+                </div>
+                
+        </form>
+    </div>
+
+        </div>
+        
+
+    <!--Rodapé-->
+    <hr>
+    <footer>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/dislani-melo-b7b370212/" class="p-3">
+                    <img class="tm-social" src="assets/img/linkedin.png" alt="Logo Linkedin">
+                </a>
+
+                <a href="https://github.com/Dislani" class="p-3">
+                    <img class="tm-social" src="assets/img/imggithub.png" alt="Logo github">
+                </a>
+
+            </div>
+            <div class="col-md-12">
+                <p class="text-center">
+                    Todos os direito reservados : Dislani Melo &copy
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--/Rodapé-->
+
+
+    <script src="assets/js/script.js"> </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
