@@ -89,13 +89,3 @@ function enviar() {
     }
 
 }
-
-function mapaZomm(){
-    mapa.style.width='600px'
-    mapa.style.heigth= '600px'
-}
-
-function mapaNormal(){
-    mapa.style.width='900px'
-    mapa.style.heigth= '900px'
-}
